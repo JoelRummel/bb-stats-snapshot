@@ -1,0 +1,287 @@
+/*
+FOR SMALL TEXT: font-family: 'Open Sans', sans-serif;
+FOR LARGE TEXT: font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+	margin: 0px;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	border-bottom: 1px solid gray;
+	padding-bottom: 5px;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+td {
+	border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+table {
+	border: 2px solid gray;
+	border-collapse:collapse;
+	margin-bottom: 20px;
+}
+#Content {
+	font-family: 'Open Sans', sans-serif;
+	margin-left:10%;
+	margin-right:10%;
+}
+#Header {
+	background-color:#2f2f2f;
+	color:white;
+}
+#Title {
+	height: 80px;
+	display: table;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#Subtitle {
+	font-family: 'Montserrat', sans-serif; 
+	display:table-cell; 
+	vertical-align: middle; 
+	margin-left: 25px;
+}
+#BannerContainer {
+	width:100%;
+}
+#Banner {
+	width:100%;
+	display:block;
+	margin:0 auto;
+}
+#StatusBar {
+	background-color:#ffff80;
+	color:gray;
+	font-family: 'Open Sans', sans-serif;
+	padding-left:10%;
+	font-size:14px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#Navbar {
+	font-family: 'Open Sans', sans-serif;
+	margin-left:10%;
+	display:flex;
+}
+#Footer {
+	background-color:#2f2f2f;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:20px;
+}
+#ItemBox {
+	display:flex;
+	justify-content:space-between;
+	margin-top:20px;
+}
+#ALL_TABLES {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.RowLink, .MostUsedBox, .StatLinkBox {
+	transition:background-color 0.1s;
+}
+.RowLink:hover, .MostUsedBox:hover, .StatLinkBox:hover {
+	background-color:lightblue;
+	cursor: pointer;
+}
+.Delink {
+	color:black;
+	text-decoration:none;
+}
+.StatLinkBox {
+	border:2px solid gray;
+	height:300px;
+	margin-bottom:20px;
+}
+.UB_Header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-left: 2px solid gray;
+	border-right:2px solid gray;
+	border-top:  2px solid gray;
+}
+.UB_img {
+	width:50px;
+	align-self:center;
+}
+.FavoriteShipBox {
+	width:175px;
+	text-align:center;
+	margin-left:1%;
+	margin-right:1%;
+}
+.FSB_Header {
+	display:flex;
+	justify-content:center;
+	border-left:2px solid gray;
+	border-right:2px solid gray;
+	border-top:2px solid gray;
+	flex-wrap:wrap;
+}
+.FSB_Table {
+	width:175px;
+}
+.BlogDate {
+	color:gray;
+	font-size:14px;
+	margin-left:10px;
+}
+.MostUsedBox {
+	display:inline-flex;
+	align-items:center;
+	height:100px;
+	/*width: -webkit-calc(50% - 2px);
+    width:    -moz-calc(50% - 2px);
+	width: 		   calc(50% - 2px);*/
+	width:50%;
+	box-sizing: border-box;
+	margin-top: -1px;
+	border:1px solid gray;
+}
+.Button {
+	display: inline-block;
+	width:100px;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	transition:background-color 0.2s;
+}
+.ButtonDropdown {
+	display: inline-block;
+	width:100px;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	transition:background-color 0.2s;
+}
+.Button:hover {
+	background-color:navy;
+}
+.ButtonDropdown:hover {
+	background-color:navy;
+}
+.DROPDOWN {
+	display:inline-block;
+}
+.Dropdown {
+    position: absolute;
+    background-color: #2f2f2f;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s, visibility 0.2s;
+}
+.DROPDOWN:hover .Dropdown {
+	opacity:1;
+	visibility:visible;
+}
+.Droplink {
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	text-decoration:none;
+	color:white;
+	transition: background-color 0.2s;
+}
+.Droplink:hover {
+	background-color:navy;
+}
+.Navlink {
+	text-decoration:none;
+	color:white;
+}
+.goodthing {
+	text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: lightblue;
+    color: gray;
+    border: 2px solid deepskyblue;
+}
+.badthing {
+	text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: lightsalmon;
+    color: gray;
+    border: 2px solid red;
+}
+@media screen and (min-width: 1200px) {
+	#Banner {
+		width:1200px;
+		margin:auto;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.MostUsedBox {
+		width:100%;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#ItemBox {
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#Navbar {
+		margin-left:0;
+		display:block;
+	}
+	.MostUsedBox h3 {
+		font-size:14px;
+	}
+	.Button {
+		width: 49%;
+	}
+	.DROPDOWN {
+		width: 49%;
+	}
+	.ButtonDropdown {
+		width: 100%;
+	}
+	#Subtitle {
+		font-size:12px;
+	}
+}
+
+/* BEGIN TABLE FLEXBOX MEDIA QUERY HELL */
+
+#T_Outer {
+	display: flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+}
+#T_Biggie {
+	display:inline-flex;
+	justify-content:center;
+}
+#T_Three {
+	display: inline-flex;
+	flex-flow: column;
+}
+
+@media screen and (min-width: 1350px) {
+	#T_Biggie {
+		width:25%;
+	}
+	#T_Three {
+		flex-flow: row nowrap;
+		width:75%;
+		justify-content: space-around;
+	}
+}

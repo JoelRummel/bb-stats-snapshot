@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "ADMIN"
+AuthUserFile "/home/refbias2/.htpasswds/public_html/bb-stats.com/ADMIN/passwd"
+require valid-user

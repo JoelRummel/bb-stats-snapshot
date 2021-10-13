@@ -1,0 +1,7 @@
+[20-Jul-2018 18:15:00 CST6CDT] PHP Parse error:  syntax error, unexpected '"' src='' style='width:50px;'>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/refbias2/public_html/bb-stats.com/itemstats.php on line 58
+[29-Jul-2018 10:04:53 CST6CDT] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/refbias2/public_html/bb-stats.com/header.php on line 50
+[31-Jul-2018 18:30:54 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/refbias2/public_html/bb-stats.com/mailinglist.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/refbias2/public_html/bb-stats.com/mailinglist.php on line 18
+[30-Oct-2018 14:38:26 CST6CDT] PHP Parse error:  syntax error, unexpected 'default' (T_DEFAULT) in /home/refbias2/public_html/bb-stats.com/ship.php on line 26
